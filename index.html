@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ehtesham Shareef</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="try.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+ 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+    	$(window).scroll(function() {
+    var scrollPos = $(window).scrollTop(),
+        navbar = $('.navbar-default');
+        navbarli=$('.navbar');
+
+    if (scrollPos > 20) {
+      navbar.addClass('change-color');
+      navbarli.addClass('change-color');
+    } else {
+      navbar.removeClass('change-color');
+    }
+  });
+    	$('#fullpage').fullpage(
+		{		
+			scrollBar:true,
+			menu: '#menu',
+			anchors: ['home','about','projects']
+		});
+
+         $(function(){
+        $(".element").typed({
+            strings: ["Hi, I'm Ehtesham Shareef"],
+            typeSpeed: 50,
+            startDelay: 1000    
+        });
+    });
+
+
+  });
+    
+
+</script>
+
+</head>
+
+<body>
+<div id="fullpage">
+	<div class="section container-fluid text-center" id="section1">	
+		<div class="element" style="display:inline;"></div>
+        <ul class="social-buttons" id="demo1">
+<li>
+    <a href="#" class="brandico-twitter-bird"></a>
+  </li>
+  <li>
+    <a href="#" class="brandico-facebook"></a>
+  </li>
+  <li>
+    <a href="#" class="brandico-github"></a>
+  <li>
+    <a href="#" class="fa fa-steam"></a>
+  </li>
+  <li>
+    <a href="#" class="brandico-linkedin"></a>
+  </li>
+</ul>
+        
+	</div>
+	<div class="section container" id="section2">
+		<div class="row">
+			<div class="col-xs-8">
+				<h1 id="abouthead">About me</h1>
+				<p id="aboutme">I am an amateur front end developer in my final year of college. I am majoring in Information Technology from MIT,Manipal.</p>
+                <p id="aboutme">I am passionate about gaming and spend hours playing DoTA 2 and Overwatch. I'm also an avid football fan and support Manchester United.
+			</div>
+			<div class="col-xs-4">
+				<img id="img-johney" src="johney.jpg"></img>
+			</div>
+		</div>
+	</div>
+	<div class="section container" style="padding-left: 0px">
+	<div class="row">
+		<div class="col-xs-4">
+    <div class="hovereffect">
+        <h3>Catering Management System</h3>
+        <p>Developed an application at ONGC using SAP/ABAP where users of an organization can monitor their food consumption and keep a track of 
+        how much money they are spending on food. Also keeps a track of the money owed to the caterer which can be viewed by the administrator.
+        </p>
+            <div class="overlay">
+                <button class="btn">Github</button>
+            </div>
+    	</div>
+	</div>
+
+	<div class="col-xs-4">
+    <div class="hovereffect">
+        <h3>Hospital Management System</h3>
+        <p>Along with Tanvi Gupta, developed an application using Java servlets and MySQL Database to replicate a hospital management system. Users can book appointments by selecting a department and the corresponding doctor. The doctors can view their appointments and clear their schedule.</p>
+            <div class="overlay">
+                 <button class="btn">Github</button>
+            </div>
+    	</div>
+	</div>
+
+	<div class="col-xs-4">
+    <div class="hovereffect">
+        <h3>Anonymizing data and placement data analysis</h3>
+        <p id="anonymize">Along with Tanvi Gupta,developed a program which anonymizes the initial data set using k-anonymity(datafly algorithm) and then applied queries for analysis of the data using Python.
+	</p>
+            <div class="overlay">
+                <button class="btn">Github</button>
+            </div>
+    	</div>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-xs-4">
+    <div class="hovereffect">
+        <h3>C Parser</h3>
+        <p>Along with Tanvi Gupta and Arnav Jain, developed a C parser using lex and yacc capable of parsing basic C structures. It can report
+        variables that have not been used or that have been used but not declared.</p>
+            <div class="overlay">
+                <button class="btn">Github</button>
+            </div>
+    	</div>
+	</div>
+	<div class="col-xs-4">
+    <div class="hovereffect">
+        <h3>e-Election System</h3>
+        <p>Along with Harsha Costa, created a desktop application using C# and MySQL where users can cast their vote for an ongoing election.The data is fetched and stored in a MySQL database.
+        </p>
+            <div class="overlay">
+                <button class="btn">Github</button>
+            </div>
+    	</div>
+	</div>
+	<div class="col-xs-4">
+    <div class="hovereffect">
+        <h3>Obstacle Detector</h3>
+        <p>Along with Hriddhi Dey and Tanvi Gupta,built the obstacle detector by assembling a circuit using an 89C51 microcontroller with an ultrasonic sensor and implemented the code using Assembly language to detect an obstacle and sound a buzzer whose volume increases the you move closer to the obstacle.</p>
+            <div class="overlay">
+                <button class="btn">Github</button>
+            </div>
+    </div>
+	</div>
+		
+	</div>
+
+	</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="johney.jpg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul id="menu" class="nav navbar-nav navbar-right">
+        <li data-menuanchor="home"><a href="#home">Home</a></li>
+        <li data-menuanchor="about"><a href="#about" >About</a></li>
+        <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>   
+</html>
