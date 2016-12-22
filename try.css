@@ -1,6 +1,4 @@
 
-@import url(http://weloveiconfonts.com/api/?family=brandico);
-
 #aboutme{
 	max-width: 750px;
 	padding:10px 0px 0px 200px;
@@ -216,35 +214,3 @@ ul.social-buttons li a {
   color: white;
 }
 
-ul.social-buttons li a.fa-twitter {
-  background-color: #4099FF;
-}
-
-ul.social-buttons li a.fa-facebook {
-  background-color: #3B5998;
-}
-
-ul.social-buttons li a.fa-github {
-  background-color: #333;
-}
-
-ul.social-buttons li a.brandico-vimeo {
-  background-color: #4EBBFF;
-}
-
-ul.social-buttons li a.fa-linkedin {
-  background-color: #0e76a8;
-}
-
-ul.social-buttons li a.fa-steam{
-  background-color:black;
-}
-
-/*Demo 1*/
-ul#demo1 li a {
-  transition: transform 0.2s linear;
-}
-
-ul#demo1 li:hover a {
-  transform: translateY(-10px);
-}
